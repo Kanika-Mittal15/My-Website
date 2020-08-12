@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+html{
+	background-color: black;
+}
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+/* Style the navigation bar links */
+.navbar  a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+}
+/* Change color on hover */
+.navbar  a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.mySlides{
+	float: left;
+	margin-top: 10px;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+div.a{
+	font-size: 20px;
+	text-align: justify;
+	font-style: italic;
+}
+.portfolio{
+	text-align: center;
+	font-size: 50px;
+	color: white;
+	padding: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+/* Style inputs */
+input[type=text],input[type=tel],input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color:black;
+  padding: 10px;
+}
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.form-group{
+	color: white;
+}
+div.to{
+  display: block;
+  color: white;
+  float: left;
+}
+.c{
+	margin-top: 80px;
+	font-size: 50px;
+}
+.a{
+	clear: both;
+}	
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+}
+footer{
+	position: relative;
+	margin-top: 50px;
+    padding: 40px;
+    text-align: center;
+    font-size: 30px;
+    word-spacing: 10px;
+}
+.des,.a{
+	color:white;
+}
+.b{
+	text-align: center;
+	font-size: 50px;
+	color: white;
+	position: relative;
+}
+.about{
+	text-align: center;
+	font-size: 10px;
+	color: white;
+	padding: 20px;
+}

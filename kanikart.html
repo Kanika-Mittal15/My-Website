@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>KANIKART</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="kanikart.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+<div class="navbar ">
+  <a href="#home">HOME</a>
+  <a href="#portfolio">PORTFOLIO</a>
+  <a href="#about">ABOUT</a>
+  <a href="#contact">CONTACT</a></div>
+ <div class="header">
+  <h1>KANIKART</h1>
+  <p>"Every canvas is a journey all it's own."</p>
+ </div>
+<style >
+	/* Header/Logo Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background:url("love.jpg");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 600px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  color: white;
+  font-size: 30px;
+  opacity: 80%;
+}
+@media screen and (max-width: 100px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+<style>
+  *{
+			box-sizing: border-box;
+		}
+		.gallery{
+			border:1px solid #ccc;
+		}
+		.gallery img {
+			width: 100%;
+			height: 500px;
+		}
+		.des{
+			padding: 15px;
+			text-align: center;
+		}
+		.responsive{
+			padding: 0 6px;
+			float: left;
+			width: 25%;
+		}
+		@media only screen and (max-width: 700px){
+			.responsive,.to{
+				width: 50%;
+				margin:6px 0;
+			}
+		}
+		@media only screen and (max-width: 500px){
+			.responsive,.to{
+				width: 100%;
+				
+			}
+		}
+}
+</style>
+</style>
+<div class="portfolio" id="portfolio"><b>PORTFOLIO</b></div>
+    <div class="responsive">
+	    <div class="gallery">
+	    <img src="swing.jpg">
+			<div class="des"><b>SWING</b></div>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<img src="girl in the flowers.jpg">	
+			<div class="des"><b>KRISHNA</b></div>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<img src="beautiful scenery.jpg">
+			<div class="des"><b>SCENERY</b></div>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<img src="cat.jpg">
+			<div class="des"><b>GALLERY</b></div>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<img src="girl behind the leaves.jpg">
+			<div class="des"><b>LEAVES</b></div>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<img src="wild.jpg">
+			<div class="des"><b>WILD</b></div>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<img src="romeo and juliet.jpg">
+			<div class="des"><b>ROMEO AND JULIET</b></div>
+		</div>
+	</div>
+	<div class="responsive">
+		<div class="gallery">
+			<img src="waterfall.jpg">
+			<div class="des"><b>WATERFALL</b></div>
+		</div>
+	</div>
+<!-- Slide Show -->
+<section>
+	 <div class="to" id="about"><b><h1 style="font-size: 50px; color: white">About </h1></b></div>
+     <img class="mySlides" src="flowers on dog.jpg" style="width:100%;height:500px;">
+     <img class="mySlides" src="krishna.jpg" style="width:100%;height:500px;">
+     <img class="mySlides" src="scenery.jpg" style="width:100%;height:500px;">
+</section>
+<section>
+    <div class="a" ><p>Hii everyone I am kanika a self taught artist from India . Welcome to my page I love to  create it gives me so much happiness I am very passionate artist . I love to draw , paint and color .I have tried working on different medias but my favorite one is acrylic painting because one can do so much with acrylic painting .I hope that you would like my paintings .Creating is one thing that I can do all day without getting tired . So enjoy .</p><p>Art has the power to transform to illuminate , to educate , inspire and motivate.Art is something that makes you breathe with a different kind of happiness. Art has the role in education of helping children become like themselves instead of more like someone else.</p>
+	<p>"ART IS THE JOURNEY OF A FREE SOUL"</p></div>
+</section>
+<form >
+  <div class="container">
+       <div style="text-align:center;color: white;">
+    <h1 class="c" id="contact">Contact Us</h1>
+    <h2>Chandigarh,India</h2>
+       </div>
+  <div class="row">
+    <div class="column">
+      <img src="cat and girl.jpg" style="width:100%" height="500px" >
+    </div>
+<div class="column">
+          <div class="form-group">
+            <label for="contact-name">Name</label>
+            <input type="text" class="form-control" id="contact-name" name="name"       placeholder="Enter your name.." onkeyup='validateName()'>
+            <span class='error-message' id='name-error'></span>
+          </div>
+         <div class="form-group">
+            <label for="contact-phone">Phone Number</label>
+            <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Ex: 1231231234" onkeyup='validatePhone()'>
+            <span class='error-message' id='phone-error'></span>
+          </div>
+         <div class="form-group">
+            <label for="contact-email">Email address</label>
+            <input type="email" class="form-control" id="contact-email" name="email" placeholder="Enter Email" onkeyup='validateEmail()'>
+            <span class='error-message' id='email-error'></span>
+          </div>   
+         <div class="form-group">
+            <label for='contactMessage'>Your Message</label>
+            <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Enter a brief message" onkeyup='validateMessage()'></textarea>
+            <span class='error-message' id='message-error'></span>
+          </div>
+         <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge" style="background-color: grey;">
+  <a href="https://www.facebook.com"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://www.pinterest.com"><i class="fa fa-pinterest-p"></i></a>
+  <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+  <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+</footer>
+	<script src="kanikart.js"></script>
+</body>
+</html>
